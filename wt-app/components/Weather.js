@@ -34,7 +34,7 @@ export default class Weather extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
+            <View >
                 <ImageBackground source={require('../bg/Pixel-2-Rainy-day-wallpaper-1.png')} style={styles.backdrop}>
                     <View style={styles.contentBox}>
                         <Text style={styles.text}>Zip code is {this.props.zipCode}.</Text>
@@ -47,7 +47,7 @@ export default class Weather extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    container: { paddingTop: 25 },
+    
     backdrop: { width: '100%', height: '100%'},
     contentBox: {
         flexDirection: 'column',
